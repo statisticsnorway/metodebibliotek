@@ -1,0 +1,51 @@
+# Metodebibliotek detaljert tabell
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(kableExtra)
+library(stringr)
+library(tidyverse)
+```
+Her finner du en tabell med detaljer over alle funksjoner i metodebibliotek.
+
+
+```{r, echo = F, messages = F}
+
+ssblist <- read.csv("../data/SSBfuncs.csv")
+
+ssbtabell <- NULL
+for (i in 1:nrow(ssblist)){
+  newline <- ssblist[i, -match("tags", names(ssblist))]
+  tags_split <- strsplit(ssblist$tags[i], " ")[[1]]
+  process <- str_extract(tags_split, ".+?(?=.)")
+  antall <- length(unique(process))
+  if (antall > 1){
+    newline <- rbind(newline, newline[rep(1, antall - 1),])
+  }
+  newline$process <- unique(process)
+  ssbtabell <- rbind(ssbtabell, newline)
+}
+ssbtabell <- ssbtabell[order(ssbtabell$process), ]
+prosess_names <- data.frame(code = c(2,4,5,7), 
+                            name = c("Planlegge","Samle inn", "Klargjøre","Formidler"))
+get_rows <- function(pnum){
+  firsti <- which(pnum == ssbtabell$process)[1]
+  lasti <- which(pnum == ssbtabell$process)[length(which(pnum == ssbtabell$process))]
+  c(firsti, lasti)
+}
+
+farge <- c("#e7ecec", "#e3f1e6","#eae3f0", "#dcf1fc", "ffddca", "f3ebc6")
+ssbtabell %>%
+  kbl(row.names = F) %>%
+  kable_styling() %>%
+  pack_rows(prosess_names$name[1], get_rows(2)[1], get_rows(2)[2], label_row_css= paste0("background-color: ", farge[1])) %>%
+  pack_rows(prosess_names$name[2], get_rows(4)[1], get_rows(4)[2], label_row_css= paste0("background-color: ", farge[2])) %>%
+  pack_rows(prosess_names$name[3], get_rows(5)[1], get_rows(5)[2], label_row_css= paste0("background-color: ", farge[3])) %>%
+    pack_rows(prosess_names$name[4], get_rows(7)[1], get_rows(7)[2], label_row_css= paste0("background-color: ", farge[4]))
+  
+  
+  
+
+```
+
+[Tilbake til metodebibliotek](../README.md)
