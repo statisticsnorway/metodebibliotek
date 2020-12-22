@@ -9,7 +9,7 @@ This list contains the names of method functions which may be useful in creating
 For technical help on the methods library and calling functions, see the [technical help file](help/technical.md).
 
 ### Katalog
-Her finner du en liste over funksjoner i SSBs metodebibliotek med en kort beskrivelse. Hvis du ønsker å ser listen som en tabell [klikk her](help/metbib_tabell.md)
+Her finner du en liste over funksjoner i SSBs metodebibliotek med en kort beskrivelse. Hvis du ønsker å ser listen som en tabell [klikk her](help/metodebib_tabell.html)
 
 
 **Planlegge**  Denne fasen beskriver utviklings- og designaktiviteter, og eventuelt tilknyttet

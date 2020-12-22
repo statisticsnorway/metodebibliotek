@@ -15,7 +15,7 @@ For technical help on the methods library and calling functions, see the
 
 Her finner du en liste over funksjoner i SSBs metodebibliotek med en
 kort beskrivelse. Hvis du ønsker å ser listen som en tabell [klikk
-her](help/metbib_tabell.md)
+her](help/metodebib_tabell.html)
 
 **Planlegge** Denne fasen beskriver utviklings- og designaktiviteter, og
 eventuelt tilknyttet praktisk utredningsarbeid som trengs for å definere
