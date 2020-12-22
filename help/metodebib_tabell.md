@@ -4,9 +4,6 @@ Metodebibliotek detaljert tabell
 Her finner du en tabell med detaljer over alle funksjoner i
 metodebibliotek.
 
-    ## Warning in read.table(file = file, header = header, sep = sep, quote = quote, :
-    ## incomplete final line found by readTableHeader on '../data/SSBfuncs.csv'
-
 <table>
 <colgroup>
 <col style="width: 9%" />
