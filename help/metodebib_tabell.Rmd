@@ -42,9 +42,7 @@ ssbtabell %>%
   pack_rows(prosess_names$name[2], get_rows(4)[1], get_rows(4)[2], label_row_css= paste0("background-color: ", farge[2])) %>%
   pack_rows(prosess_names$name[3], get_rows(5)[1], get_rows(5)[2], label_row_css= paste0("background-color: ", farge[3])) %>%
     pack_rows(prosess_names$name[4], get_rows(7)[1], get_rows(7)[2], label_row_css= paste0("background-color: ", farge[4]))
-  
-  
-  
+
 
 ```
 
