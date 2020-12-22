@@ -25,24 +25,10 @@ for (i in 1:nrow(ssblist)){
   newline$process <- unique(process)
   ssbtabell <- rbind(ssbtabell, newline)
 }
-ssbtabell <- ssbtabell[order(ssbtabell$process), ]
-prosess_names <- data.frame(code = c(2,4,5,7), 
-                            name = c("Planlegge","Samle inn", "Klargjøre","Formidler"))
-get_rows <- function(pnum){
-  firsti <- which(pnum == ssbtabell$process)[1]
-  lasti <- which(pnum == ssbtabell$process)[length(which(pnum == ssbtabell$process))]
-  c(firsti, lasti)
-}
 
-farge <- c("#e7ecec", "#e3f1e6","#eae3f0", "#dcf1fc", "ffddca", "f3ebc6")
-ssbtabell %>%
-  kbl(row.names = F) %>%
-  kable_styling() %>%
-  pack_rows(prosess_names$name[1], get_rows(2)[1], get_rows(2)[2], label_row_css= paste0("background-color: ", farge[1])) %>%
-  pack_rows(prosess_names$name[2], get_rows(4)[1], get_rows(4)[2], label_row_css= paste0("background-color: ", farge[2])) %>%
-  pack_rows(prosess_names$name[3], get_rows(5)[1], get_rows(5)[2], label_row_css= paste0("background-color: ", farge[3])) %>%
-    pack_rows(prosess_names$name[4], get_rows(7)[1], get_rows(7)[2], label_row_css= paste0("background-color: ", farge[4]))
-
+sstabell <- ssbtabell[order(ssbtabell$process), ]
+library(pander)
+pander(ssbtabell, row.names = F)
 
 ```
 
