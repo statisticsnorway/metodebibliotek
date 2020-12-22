@@ -26,9 +26,9 @@ for (i in 1:nrow(ssblist)){
   ssbtabell <- rbind(ssbtabell, newline)
 }
 
-sstabell <- ssbtabell[order(ssbtabell$process), ]
+ssbtabell <- ssbtabell[order(ssbtabell$process), ]
 library(pander)
-pander(ssbtabell, row.names = F)
+pander(ssbtabell, row.names = F, split.table=Inf)
 
 ```
 
