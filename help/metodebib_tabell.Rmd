@@ -1,4 +1,4 @@
-# Metodebibliotek detaljert tabell
+# Metodebibliotek detailed table
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
@@ -6,7 +6,7 @@ library(kableExtra)
 library(stringr)
 library(tidyverse)
 ```
-Her finner du en tabell med detaljer over alle funksjoner i metodebibliotek.
+Below is a detailed table containing the functions included in Statistic Norway's Metodebibliotek. Functions are organised by process and may appear multiple times.
 
 
 ```{r, echo = F, messages = F}
