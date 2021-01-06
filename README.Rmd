@@ -3,18 +3,17 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 # Metodebibliotek ![Code Library](viz/codelibrary_ssb.png)
-#### SSBs library for methods code
-This list contains the names of method functions which may be useful in creating official statistics. All functions are open source in either R or python, although some call other programs in the background (eg JDemtra).
+#### Statistics Norway's library for methods' code
+This list contains the names of methodological functions which may be useful in creating official statistics. All functions are open source in either R or python, although some call other programs in the background (eg JDemtra).
 
 For technical help on the methods library and calling functions, see the [technical help file](help/technical.md).
 
-### Katalog
-Her finner du en liste over funksjoner i SSBs metodebibliotek med en kort beskrivelse. Hvis du ønsker å ser listen som en tabell [klikk her](help/metodebib_tabell.md)
+### Catalogue
+Below is a list of functions in Statistic Norway's Metodebibliotek. It contains a short description of each function with a link to further documentation. If you want the list in table format [click here](help/metodebib_tabell.md)
 
 
-#### **Planlegge**
-Denne fasen beskriver utviklings- og designaktiviteter, og eventuelt tilknyttet
-praktisk utredningsarbeid som trengs for å definere statistisk produkt, begreper, metoder, innsamlingsinstrumenter og prosesser.
+#### **Design**
+This phase describes the development and design activities, and any associated practical research work needed to define the statistical outputs, concepts, methodologies, collection instruments and operational processes. 
 
 ```{r, echo = F, results="asis"}
 source("R/list_funcs.R")
@@ -25,20 +24,16 @@ create_text(ssblist, tag = c("2.1", "2.2", "2.3", "2.4", "2.5", "2.6"))
 ```
 
 
-#### **Samle inn**
-Denne fasen samler eller henter inn all nødvendig informasjon (for eksempel
-data, metadata og paradata) ved hjelp av forskjellige metoder (for eksempel
-anskaffelse, innsamling, uttrekk, overføring), og laster dem inn i det aktuelle
-miljøet for videre behandling.
+#### **Collect**
+This phase collects or gathers all necessary information (e.g. data, metadata and paradata), using different collection modes (e.g. acquisition, collection, extraction, transfer), and loads them into the appropriate environment for further processing.
 
 ```{r, echo = F, results="asis"}
 create_text(ssblist, tag = c("4.1", "4.2", "4.3", "4.4"))
 ```
 
 
-#### **Klargjøre**
-Denne fasen beskriver editering av inndata og hvordan de gjøres klar til
-analyse.
+#### **Process**
+This phase describes the processing of input data and their preparation for analysis.
 
 ```{r, echo = F, results="asis"}
 create_text(ssblist, tag = c("5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "5.7", "5.8"))
@@ -46,11 +41,11 @@ create_text(ssblist, tag = c("5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "5.7", "5
 
 
 #### **Analyse**
-I denne fasen produseres statistikkprodukter og undersøkes i detalj. 
+In this phase, statistical outputs are produced and examined in detail. It includes preparing statistical content (including commentary, technical notes, etc.), and ensuring outputs are “fit for purpose” prior to dissemination to users.  
 
 
-#### **Formidler**
-Denne fasen håndterer formidling av statistikkproduktet til brukerne. 
+#### **Disseminate**
+This phase manages the release of the statistical products to users. It includes all activities associated with assembling and releasing a range of static and dynamic products via a range of channels.  
 
 ```{r, echo = F, results="asis"}
 create_text(ssblist, tag = c("7.1", "7.2", "7.3", "7.4", "7.5"))

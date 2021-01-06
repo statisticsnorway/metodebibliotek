@@ -1,48 +1,49 @@
 Metodebibliotek ![Code Library](viz/codelibrary_ssb.png)
 ========================================================
 
-#### SSBs library for methods code
+#### Statistics Norway’s library for methods’ code
 
-This list contains the names of method functions which may be useful in
-creating official statistics. All functions are open source in either R
-or python, although some call other programs in the background (eg
-JDemtra).
+This list contains the names of methodological functions which may be
+useful in creating official statistics. All functions are open source in
+either R or python, although some call other programs in the background
+(eg JDemtra).
 
 For technical help on the methods library and calling functions, see the
 [technical help file](help/technical.md).
 
-### Katalog
+### Catalogue
 
-Her finner du en liste over funksjoner i SSBs metodebibliotek med en
-kort beskrivelse. Hvis du ønsker å ser listen som en tabell [klikk
-her](help/metodebib_tabell.md)
+Below is a list of functions in Statistic Norway’s Metodebibliotek. It
+contains a short description of each function with a link to further
+documentation. If you want the list in table format [click
+here](help/metodebib_tabell.md)
 
-#### **Planlegge**
+#### **Design**
 
-Denne fasen beskriver utviklings- og designaktiviteter, og eventuelt
-tilknyttet praktisk utredningsarbeid som trengs for å definere
-statistisk produkt, begreper, metoder, innsamlingsinstrumenter og
-prosesser.
+This phase describes the development and design activities, and any
+associated practical research work needed to define the statistical
+outputs, concepts, methodologies, collection instruments and operational
+processes.
 
 The
 [GetKlass](https://www.rdocumentation.org/packages/klassR/versions/0.1.2/topics/GetKlass)
 function is written in R. Retrieves classifications and codelists from
 Klass
 
-#### **Samle inn**
+#### **Collect**
 
-Denne fasen samler eller henter inn all nødvendig informasjon (for
-eksempel data, metadata og paradata) ved hjelp av forskjellige metoder
-(for eksempel anskaffelse, innsamling, uttrekk, overføring), og laster
-dem inn i det aktuelle miljøet for videre behandling.
+This phase collects or gathers all necessary information (e.g. data,
+metadata and paradata), using different collection modes
+(e.g. acquisition, collection, extraction, transfer), and loads them
+into the appropriate environment for further processing.
 
 The [Dataset](https://pypi.org/project/pyjstat/) function is written in
 Python. Create class instance of a json dataset
 
-#### **Klargjøre**
+#### **Process**
 
-Denne fasen beskriver editering av inndata og hvordan de gjøres klar til
-analyse.
+This phase describes the processing of input data and their preparation
+for analysis.
 
 The
 [GetKlass](https://www.rdocumentation.org/packages/klassR/versions/0.1.2/topics/GetKlass)
@@ -56,11 +57,16 @@ Python. Create class instance of a json dataset
 
 #### **Analyse**
 
-I denne fasen produseres statistikkprodukter og undersøkes i detalj.
+In this phase, statistical outputs are produced and examined in detail.
+It includes preparing statistical content (including commentary,
+technical notes, etc.), and ensuring outputs are “fit for purpose” prior
+to dissemination to users.
 
-#### **Formidler**
+#### **Disseminate**
 
-Denne fasen håndterer formidling av statistikkproduktet til brukerne.
+This phase manages the release of the statistical products to users. It
+includes all activities associated with assembling and releasing a range
+of static and dynamic products via a range of channels.
 
 The
 [GetKlass](https://www.rdocumentation.org/packages/klassR/versions/0.1.2/topics/GetKlass)
