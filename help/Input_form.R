@@ -12,6 +12,7 @@ ui <- fluidPage(
                  "metodebibpy" = "metodebibpy")),
   textInput("export_package", "What is the name of the original package it is in?"),
   textInput("description", "Please give a short descrpition of the function"),
+  textInput("ansvar", "Please write the person responsible for this function"),
   textInput("url", "Please give the url"),
   checkboxGroupInput("tags", "Which processes is it used in?",
                c("Planlegge variabler" = "2.2",
@@ -34,6 +35,7 @@ server <- function(input, output) {
                 input$package,
                 input$export_package,
                 input$description,
+                input$ansvar,
                 input$url,
                 paste(input$tags, sep = " "))
     newlist <- rbind(ssblist, newrow)
