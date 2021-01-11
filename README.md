@@ -9,14 +9,14 @@ either R or python, although some call other programs in the background
 (eg JDemtra).
 
 For technical help on the methods library and calling functions, see the
-[technical help file](help/technical.md).
+[technical help file](viz/technical.md).
 
 ### Catalogue
 
 Below is a list of functions in Statistic Norway’s Metodebibliotek. It
 contains a short description of each function with a link to further
 documentation. If you want the list in table format [click
-here](help/metodebib_tabell.md)
+here](viz/metodebib_tabell.md)
 
 #### **Design**
 
