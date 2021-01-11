@@ -6,19 +6,18 @@ knitr::opts_chunk$set(echo = TRUE)
 #### Statistics Norway's library for methods' code
 This list contains the names of methodological functions which may be useful in creating official statistics. All functions are open source in either R or python, although some call other programs in the background (eg JDemtra).
 
-For technical help on the methods library and calling functions, see the [technical help file](help/technical.md).
+For technical help on the methods library and calling functions, see the [technical help file](viz/technical.md).
 
 ### Catalogue
-Below is a list of functions in Statistic Norway's Metodebibliotek. It contains a short description of each function with a link to further documentation. If you want the list in table format [click here](help/metodebib_tabell.md)
+Below is a list of functions in Statistic Norway's Metodebibliotek. It contains a short description of each function with a link to further documentation. If you want the list in table format [click here](viz/metodebib_tabell.md)
 
 
 #### **Design**
 This phase describes the development and design activities, and any associated practical research work needed to define the statistical outputs, concepts, methodologies, collection instruments and operational processes. 
 
 ```{r, echo = F, results="asis"}
-source("R/list_funcs.R")
-
-ssblist <- read.csv("data/SSBfuncs.csv")
+source("../R/Input_form.R")
+ssblist <- read.csv('./SSBfuncs.csv')
 create_text(ssblist, tag = c("2.1", "2.2", "2.3", "2.4", "2.5", "2.6"))
 
 ```

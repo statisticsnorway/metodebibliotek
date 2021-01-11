@@ -1,4 +1,4 @@
 # Technical help
-This is where you can find techincal help.
+This is where you can find technical help.
 
 [return to metodebibliotek](../README.md)
