@@ -1,4 +1,4 @@
 "function_name","language","package","export_package","description","ansvar","url","tags"
 "GetKlass","R","metodebibr","klassR","Retrieves classifications and codelists from Klass","Susie Jentoft","https://www.rdocumentation.org/packages/klassR/versions/0.1.2/topics/GetKlass","2.2 7.2 5.2"
-"PanelEstimation","R","metodebibr","CalibrateSSB","Variance estimation for panel data","Øyvind Langsrud","https://www.rdocumentation.org/packages/CalibrateSSB/versions/1.3.0/topics/PanelEstimation","5.6"
+"PanelEstimation","R","metodebibr","CalibrateSSB","Variance estimation for panel data","?yvind Langsrud","https://www.rdocumentation.org/packages/CalibrateSSB/versions/1.3.0/topics/PanelEstimation","5.6"
 "Dataset","Python","metodebibpy","pyjstat","Create class instance of a json dataset","Susie Jentoft","https://pypi.org/project/pyjstat/","4.3 5.1"

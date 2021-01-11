@@ -11,7 +11,7 @@ Below is a detailed table containing the functions included in Statistic Norway'
 
 ```{r, echo = F, messages = F}
 
-ssblist <- read.csv("../data/SSBfuncs.csv")
+ssblist <- read.csv("./SSBfuncs.csv")
 
 ssbtabell <- NULL
 for (i in 1:nrow(ssblist)){
