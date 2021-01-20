@@ -1,12 +1,13 @@
 Metodebibliotek ![Code Library](viz/codelibrary_ssb.png)
 ========================================================
 
-#### Statistics Norway’s library for methods’ code
+#### Statistics Norway’s library for methods’ code (dev version)
 
 This list contains the names of methodological functions which may be
 useful in creating official statistics. All functions are open source in
 either R or python, although some call other programs in the background
-(eg JDemtra).
+(eg JDemtra). \*\* This package is currently under development and is
+not intended for production purposes yet \*\*
 
 For technical help on the methods library and calling functions, see the
 [technical help file](viz/technical.md).
