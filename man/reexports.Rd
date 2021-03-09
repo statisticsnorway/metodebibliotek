@@ -14,6 +14,8 @@
 \alias{SSBtoolsData}
 \alias{HierarchyCompute}
 \alias{SmallCountData}
+\alias{PLSroundingPublish}
+\alias{PLSroundingInner}
 \alias{EasyData}
 \alias{ProtectKostra}
 \title{Objects exported from other packages}
@@ -31,7 +33,7 @@ below to see their documentation.
 
   \item{SSBtools}{\code{\link[SSBtools]{HierarchyCompute}}, \code{\link[SSBtools]{SSBtoolsData}}}
 
-  \item{SmallCountRounding}{\code{\link[SmallCountRounding]{SmallCountData}}}
+  \item{SmallCountRounding}{\code{\link[SmallCountRounding:PLSrounding]{PLSroundingInner}}, \code{\link[SmallCountRounding:PLSrounding]{PLSroundingPublish}}, \code{\link[SmallCountRounding]{SmallCountData}}}
 
   \item{easySdcTable}{\code{\link[easySdcTable]{EasyData}}}
 }}

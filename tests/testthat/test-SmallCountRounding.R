@@ -5,9 +5,14 @@ test_that("SmallCountData works", {
 
 test_that("PLSroundingPublish works", {
   z <- SmallCountData("e6")
-  set.seed(12345)
   a <- PLSroundingPublish(z[, -2], "freq", hierarchies = SmallCountData("eHrc"))
-  set.seed(12345)
   b <- PLSroundingPublish(z, "freq", formula = ~eu * year + geo * year)
   expect_identical(duplicated(rbind(a,b)), c(rep(FALSE, 18), rep(TRUE, 18)))
+})
+
+test_that("PLSroundingInner works", {
+  z <- SmallCountData("e6")
+  a <- PLSroundingInner(z[, -2], "freq", hierarchies = SmallCountData("eHrc"))
+  b <- PLSroundingInner(z, "freq", formula = ~eu * year + geo * year)
+  expect_identical(duplicated(rbind(a,b)), c(rep(FALSE, 6), rep(TRUE, 6)))
 })
